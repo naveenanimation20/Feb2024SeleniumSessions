@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="3">
+
+
+	<test name="Google Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="mytests.GoogleTest" />
+		</classes>
+	</test>
+
+
+	<test name="Open Cart Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="mytests.OpenCartLoginTest" />
+		</classes>
+	</test>
+
+
+	<test name="OrangeHRM Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="mytests.OrangeHRMTest" />
+		</classes>
+	</test>
+
+
+</suite>
